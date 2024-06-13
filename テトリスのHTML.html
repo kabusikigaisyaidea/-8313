@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="left-panel">
+        <div id="nextPiece">
+            <canvas id="next" width="120" height="120"></canvas>
+        </div>
+        <button id="resetButton">リセット</button>
+        <button id="pauseButton">ストップ</button>
+    </div>
+    <div id="gameContainer">
+        <canvas id="tetris" width="400" height="800"></canvas>
+        <div id="startScreen">スペースキーを押してスタート</div>
+    </div>
+    <div id="right-panel">
+        <div id="score">Score: 0</div>
+    </div>
+    <audio id="bgm" loop>
+        <source src="oto/bgm.mp3" type="audio/mp3">
+    </audio>
+    <audio id="gameoverSound">
+        <source src="oto/gameover.mp3" type="audio/mp3">
+    </audio>
+    <audio id="lineClearSound">
+        <source src="oto/lineclear.mp3" type="audio/mp3">
+    </audio>
+    <audio id="moveSound">
+        <source src="oto/move.mp3" type="audio/mp3">
+    </audio>
+    <audio id="warningSound">
+        <source src="oto/warning.mp3" type="audio/mp3">
+    </audio>
+    <audio id="placeSound">
+        <source src="oto/place.mp3" type="audio/mp3">
+    </audio>
+    <script src="game.js"></script>
+</body>
+</html>
